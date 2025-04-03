@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0288d1, #fbc02d);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: #fff;
+            width: 600px;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+            text-align: center;
+        }
+
+        h2 {
+            color: #0288d1;
+            font-size: 2.5rem;
+            margin-bottom: 15px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        .contact-info p {
+            margin: 8px 0;
+        }
+
+        .back-button {
+            align-items: center;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #0288d1;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            text-decoration: none;
+        }
+
+        .back-button:hover {
+            background-color: #fbc02d;
+            color: #333;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+        <div class="contact-info">
+            <p><strong>Address:</strong> A/07 BEHIND SEMENTIC BULDING,Anand,Gujarat</p><br>
+            <p><strong>Support Email:</strong> support@hmswebsite.com</p><br>
+            <p><strong>Phone:</strong> +9528976327</p><br>
+            <p>If you are experiencing issues with the HMS system or have questions about implementation, please reach out using the details above.</p><br>
+            <a href="javascript:history.back()" class="back-button">Go Back</a>
+        </div>
+    </div>
+</body>
+</html>

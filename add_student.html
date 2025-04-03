@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Student</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #0288d1, #fbc02d);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 50px;
+            width: 400px;
+            text-align: center;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.3);
+        }
+
+        h2 {
+            margin-bottom: 30px;
+            font-size: 2rem;
+            color: #0288d1;
+        }
+
+        .student-form .input-container {
+            position: relative;
+            margin: 25px 0;
+        }
+
+        .student-form input {
+            background: none;
+            border: none;
+            border-bottom: 2px solid #ddd;
+            padding: 15px 0;
+            width: 100%;
+            font-size: 1.2rem;
+            color: #333;
+        }
+
+        .student-form input:focus {
+            outline: none;
+            border-color: #0288d1;
+        }
+
+        .student-form label {
+            position: absolute;
+            top: 15px;
+            left: 0;
+            pointer-events: none;
+            transition: 0.3s ease;
+            font-size: 1rem;
+            color: #777;
+        }
+
+        .student-form input:focus ~ label,
+        .student-form input:not(:placeholder-shown) ~ label {
+            top: -20px;
+            font-size: 0.85rem;
+            color: #0288d1;
+        }
+
+        .underline {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 3px;
+            background-color: #fbc02d;
+            transition: width 0.3s ease;
+        }
+
+        .student-form input:focus ~ .underline {
+            width: 100%;
+        }
+
+        .submit-button {
+            margin-top: 25px;
+            background-color: #0288d1;
+            color: #fff;
+            border: none;
+            border-radius: 25px;
+            padding: 15px 25px;
+            font-size: 1.2rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.3s ease;
+        }
+
+        .submit-button:hover {
+            background-color: #fbc02d;
+            color: #333;
+            transform: translateY(-5px);
+        }
+
+        .submit-button:active {
+            transform: translateY(2px);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Add Student Management</h2>
+        <form class="student-form" action="add_student.php" method="POST">
+            <div class="input-container">
+                <input type="text" name="full_name" id="full-name" required>
+                <label for="full-name">Full Name</label>
+                <span class="underline"></span>
+            </div>
+
+            <div class="input-container">
+                <input type="email" name="email" id="email" required>
+                <label for="email">Email</label>
+                <span class="underline"></span>
+            </div>
+
+            <button type="submit" class="submit-button">Add Student</button>
+        </form>
+    </div>
+</body>
+</html>
