@@ -14,7 +14,7 @@ This project is a web-based Attendance Management System focusing on administrat
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/yourusername/attendance-management-system.git
+   git clone https://github.com/Himanshu-IT2005/Attendance-System.git
    ```
 
 2. **Navigate to the Project Directory**:
